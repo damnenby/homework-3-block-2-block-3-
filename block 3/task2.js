@@ -5,7 +5,7 @@ console.log(vegArr.join(' | '));
 
 
 // 2.
-names = 'Вася;Петя;Вова;Олег';
+let names = 'Вася;Петя;Вова;Олег';
 
 const newArr = names.split(';');
 
@@ -13,7 +13,7 @@ console.log(newArr);
 
 
 // 3.
-myname = 'Василий';
+let myname = 'Василий';
 
 function hello2(name='гость'){
     console.log('Привет, ', name);
@@ -61,18 +61,18 @@ console.log(val1);
 // 7.
 const arr = [1, 'hello', 2, 3, 4, '5', '6', 7, null];
 
-const numberArray = arr.filter(item => typeof(item) == 'number')
+const numberArray = arr.filter(item => typeof(item) == 'number');
 
-console.log(numberArray)
+console.log(numberArray);
 
 // 8.
 function arrayTesting(arr){
     for(const item of arr){
         if(item == 1){
-            return('Нашли true значение')
+            return('Нашли true значение');
         }
     }
-    return('Ничего нет')
+    return('Ничего нет');
 }
 
 const haveTrueValue = arrayTesting([0, false, null, 1]);
